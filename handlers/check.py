@@ -17,7 +17,6 @@ from state import running_task, cancel_flag, set_cooldown, reset_state
 async def check(update: Update, context: ContextTypes.DEFAULT_TYPE):
     global running_task, cancel_flag
 
-    # Cooldown check
     from state import is_cooldown
     if is_cooldown():
         await update.message.reply_text("⏳ Bot is cooling down. Please wait 15 seconds.")
