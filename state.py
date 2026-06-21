@@ -1,6 +1,6 @@
 import time
 
-running_task = None      # "check", "kill", "gen", etc.
+running_task = None
 cancel_flag = False
 cooldown_until = 0
 
