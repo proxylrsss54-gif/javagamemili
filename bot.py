@@ -5,7 +5,7 @@ from playwright.async_api import async_playwright
 import nest_asyncio
 nest_asyncio.apply()
 
-TOKEN = os.getenv("TOKEN") or "YOUR_FALLBACK_TOKEN"
+TOKEN = os.getenv("TOKEN")  # ab hardcoded nahi
 TARGET_URL = "https://giving.mclean.org/#gf_18"
 AMOUNT = "1000"
 DESIGNATION_TEXT = "The McLean Fund"
